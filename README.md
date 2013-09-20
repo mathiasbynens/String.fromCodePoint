@@ -1,4 +1,4 @@
-# ES6 `String.fromCodePoint` polyfill
+# ES6 `String.fromCodePoint` polyfill [![Build status](https://travis-ci.org/mathiasbynens/String.fromCodePoint.png?branch=master)](https://travis-ci.org/mathiasbynens/String.fromCodePoint)
 
 A robust & optimized polyfill for [the `String.fromCodePoint` method in ECMAScript 6](http://people.mozilla.org/~jorendorff/es6-draft.html#sec-21.1.2.2).
 
@@ -12,7 +12,7 @@ Other polyfills for `String.fromCodePoint` are available:
 In a browser:
 
 ```html
-<script src="fromCodePoint.js"></script>
+<script src="fromcodepoint.js"></script>
 ```
 
 Via [npm](http://npmjs.org/):
