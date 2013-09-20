@@ -6,6 +6,7 @@ Other polyfills for `String.fromCodePoint` are available:
 
 * <http://norbertlindenberg.com/2012/05/ecmascript-supplementary-characters/#String> by [Norbert Lindenberg](http://norbertlindenberg.com/) (passes all tests)
 * <https://gist.github.com/slevithan/2290602> by [Steven Levithan](http://stevenlevithan.com/) (fails 8 tests)
+* <https://github.com/paulmillr/es6-shim/blob/771e98e789292706d2435e4e10ffbe45edf40da6/es6-shim.js#L63-L83> by [Paul Miller](http://paulmillr.com/) (passes all tests)
 
 ## Installation
 
