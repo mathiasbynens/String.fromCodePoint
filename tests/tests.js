@@ -44,6 +44,14 @@ var tests = [
 		'error': RangeError
 	},
 	{
+		'codePoints': [-1],
+		'error': RangeError
+	},
+	{
+		'codePoints': [0x10FFFF + 1],
+		'error': RangeError
+	},
+	{
 		'codePoints': [''],
 		'result': '\0'
 	},
@@ -67,7 +75,13 @@ var tests = [
 		'codePoints': [3e-2],
 		'error': RangeError
 	},
+	{
+		'codePoints': [{}],
+		'error': RangeError
+	}
 ];
+
+assert.equal(String.fromCodePoint.length, 0);
 
 var errors = 0;
 tests.forEach(function(test, index) {
