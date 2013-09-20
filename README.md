@@ -4,7 +4,7 @@ An robust & optimized ES3-compatible polyfill for [the `String.fromCodePoint` me
 
 Other polyfills for `String.fromCodePoint` are available:
 
-* <http://norbertlindenberg.com/2012/05/ecmascript-supplementary-characters/> by [Norbert Lindenberg](http://norbertlindenberg.com/) (passes all tests)
+* <http://norbertlindenberg.com/2012/05/ecmascript-supplementary-characters/#String> by [Norbert Lindenberg](http://norbertlindenberg.com/) (passes all tests)
 * <https://gist.github.com/slevithan/2290602> by [Steven Levithan](http://stevenlevithan.com/) (fails 8 tests)
 
 ## Installation
