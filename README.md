@@ -25,6 +25,10 @@ npm install string.fromcodepoint
 Then, in [Node.js](http://nodejs.org/):
 
 ```js
+require('string.fromcodepoint');
+
+// On Windows and on Mac systems with default settings, case doesn’t matter,
+// which allows you to do this instead:
 require('String.fromCodePoint');
 ```
 
