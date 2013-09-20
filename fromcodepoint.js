@@ -1,3 +1,4 @@
+/*! http://mths.be/fromcodepoint v0.1.0 by @mathias */
 if (!String.fromCodePoint) {
 	String.fromCodePoint = function() {
 		var codeUnits = [];
