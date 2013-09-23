@@ -20,6 +20,10 @@ var tests = [
 		'result': ''
 	},
 	{
+		'codePoints': [-0],
+		'result': '\0'
+	},
+	{
 		'codePoints': [0],
 		'result': '\0'
 	},
