@@ -32,6 +32,10 @@ require('string.fromcodepoint');
 require('String.fromCodePoint');
 ```
 
+## Notes
+
+[A polyfill + test suite for `String.prototype.codePointAt`](http://mths.be/codepointat) is available, too.
+
 ## Author
 
 | [![twitter/mathias](http://gravatar.com/avatar/24e08a9ea84deb17ae121074d0f17125?s=70)](http://twitter.com/mathias "Follow @mathias on Twitter") |
