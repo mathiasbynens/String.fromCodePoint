@@ -1,6 +1,6 @@
 # ES6 `String.fromCodePoint` polyfill [![Build status](https://travis-ci.org/mathiasbynens/String.fromCodePoint.png?branch=master)](https://travis-ci.org/mathiasbynens/String.fromCodePoint)
 
-An robust & optimized ES3-compatible polyfill for [the `String.fromCodePoint` method in ECMAScript 6](http://people.mozilla.org/~jorendorff/es6-draft.html#sec-21.1.2.2).
+An robust & optimized ES3-compatible polyfill for [the `String.fromCodePoint` method in ECMAScript 6](http://people.mozilla.org/~jorendorff/es6-draft.html#sec-string.fromcodepoint).
 
 Other polyfills for `String.fromCodePoint` are available:
 
