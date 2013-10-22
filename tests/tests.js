@@ -1,120 +1,29 @@
 var assert = require('assert');
+var assertEquals = assert.equal;
+var assertThrows = assert['throws'];
 
 require('../fromcodepoint.js');
 
-var tests = [
-	{
-		'codePoints': [0x1D306],
-		'result': '\uD834\uDF06'
-	},
-	{
-		'codePoints': [0x1D306, 0x61, 0x1D307],
-		'result': '\uD834\uDF06a\uD834\uDF07'
-	},
-	{
-		'codePoints': [0x61, 0x62, 0x1D307],
-		'result': 'ab\uD834\uDF07'
-	},
-	{
-		'codePoints': [],
-		'result': ''
-	},
-	{
-		'codePoints': [-0],
-		'result': '\0'
-	},
-	{
-		'codePoints': [0],
-		'result': '\0'
-	},
-	{
-		'codePoints': [undefined],
-		'error': RangeError
-	},
-	{
-		'codePoints': [null],
-		'result': '\0'
-	},
-	{
-		'codePoints': [false],
-		'result': '\0'
-	},
-	{
-		'codePoints': [NaN],
-		'error': RangeError
-	},
-	{
-		'codePoints': [Infinity],
-		'error': RangeError
-	},
-	{
-		'codePoints': [-1],
-		'error': RangeError
-	},
-	{
-		'codePoints': [0x10FFFF + 1],
-		'error': RangeError
-	},
-	{
-		'codePoints': [''],
-		'result': '\0'
-	},
-	{
-		'codePoints': ['_'],
-		'error': RangeError
-	},
-	{
-		'codePoints': ['+Infinity'],
-		'error': RangeError
-	},
-	{
-		'codePoints': ['-Infinity'],
-		'error': RangeError
-	},
-	{
-		'codePoints': [3.14],
-		'error': RangeError
-	},
-	{
-		'codePoints': [3e-2],
-		'error': RangeError
-	},
-	{
-		'codePoints': [{}],
-		'error': RangeError
-	}
-];
+assertEquals(String.fromCodePoint.length, 0);
 
-assert.equal(String.fromCodePoint.length, 0);
+assertEquals(String.fromCodePoint(''), '\0');
+assertEquals(String.fromCodePoint(), '');
+assertEquals(String.fromCodePoint(-0), '\0');
+assertEquals(String.fromCodePoint(0), '\0');
+assertEquals(String.fromCodePoint(0x1D306), '\uD834\uDF06');
+assertEquals(String.fromCodePoint(0x1D306, 0x61, 0x1D307), '\uD834\uDF06a\uD834\uDF07');
+assertEquals(String.fromCodePoint(0x61, 0x62, 0x1D307), 'ab\uD834\uDF07');
+assertEquals(String.fromCodePoint(false), '\0');
+assertEquals(String.fromCodePoint(null), '\0');
 
-var errors = 0;
-tests.forEach(function(test, index) {
-	try {
-		if (test.error) {
-			assert['throws'](
-				function() {
-					String.fromCodePoint.apply(null, test.codePoints);
-				},
-				test.error,
-				index
-			);
-		} else {
-			assert.equal(
-				String.fromCodePoint.apply(null, test.codePoints),
-				test.result,
-				index
-			);
-		}
-	} catch(error) {
-		errors++;
-		console.log(error.message);
-	}
-});
-
-console.log(
-	'Ran %d tests.\n%d assertions failed.\n%d assertions passed.',
-	tests.length, errors, tests.length - errors
-);
-if (errors) {
-	process.exit(1);
-}
+assertThrows(function() { String.fromCodePoint('_'); }, RangeError);
+assertThrows(function() { String.fromCodePoint('+Infinity'); }, RangeError);
+assertThrows(function() { String.fromCodePoint('-Infinity'); }, RangeError);
+assertThrows(function() { String.fromCodePoint(-1); }, RangeError);
+assertThrows(function() { String.fromCodePoint(0x10FFFF + 1); }, RangeError);
+assertThrows(function() { String.fromCodePoint(3.14); }, RangeError);
+assertThrows(function() { String.fromCodePoint(3e-2); }, RangeError);
+assertThrows(function() { String.fromCodePoint(Infinity); }, RangeError);
+assertThrows(function() { String.fromCodePoint(NaN); }, RangeError);
+assertThrows(function() { String.fromCodePoint(undefined); }, RangeError);
+assertThrows(function() { String.fromCodePoint({}); }, RangeError);
