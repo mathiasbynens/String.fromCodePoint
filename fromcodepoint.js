@@ -4,6 +4,7 @@ if (!String.fromCodePoint) {
 		var stringFromCharCode = String.fromCharCode;
 		var floor = Math.floor;
 		var fromCodePoint = function() {
+			var MAX_SIZE = 0x4000;
 			var codeUnits = [];
 			var highSurrogate;
 			var lowSurrogate;
@@ -12,6 +13,7 @@ if (!String.fromCodePoint) {
 			if (!length) {
 				return '';
 			}
+			var result = '';
 			while (++index < length) {
 				var codePoint = Number(arguments[index]);
 				if (
@@ -31,8 +33,12 @@ if (!String.fromCodePoint) {
 					lowSurrogate = (codePoint % 0x400) + 0xDC00;
 					codeUnits.push(highSurrogate, lowSurrogate);
 				}
+				if (index + 1 == length || codeUnits.length > MAX_SIZE) {
+					result += stringFromCharCode.apply(null, codeUnits);
+					codeUnits.length = 0;
+				}
 			}
-			return stringFromCharCode.apply(null, codeUnits);
+			return result;
 		};
 		if (Object.defineProperty) {
 			Object.defineProperty(String, 'fromCodePoint', {

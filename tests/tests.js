@@ -28,3 +28,17 @@ assertThrows(function() { String.fromCodePoint(Infinity); }, RangeError);
 assertThrows(function() { String.fromCodePoint(NaN); }, RangeError);
 assertThrows(function() { String.fromCodePoint(undefined); }, RangeError);
 assertThrows(function() { String.fromCodePoint({}); }, RangeError);
+
+var counter = Math.pow(2, 15) * 3 / 2;
+var result = [];
+while (--counter >= 0) {
+	result.push(0); // one code unit per symbol
+}
+String.fromCodePoint.apply(null, result); // must not throw
+
+var counter = Math.pow(2, 15) * 3 / 2;
+var result = [];
+while (--counter >= 0) {
+	result.push(0xFFFF + 1); // two code units per symbol
+}
+String.fromCodePoint.apply(null, result); // must not throw
