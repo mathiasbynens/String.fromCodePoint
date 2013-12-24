@@ -24,10 +24,12 @@ assertThrows(function() { String.fromCodePoint(-1); }, RangeError);
 assertThrows(function() { String.fromCodePoint(0x10FFFF + 1); }, RangeError);
 assertThrows(function() { String.fromCodePoint(3.14); }, RangeError);
 assertThrows(function() { String.fromCodePoint(3e-2); }, RangeError);
-assertThrows(function() { String.fromCodePoint(Infinity); }, RangeError);
+assertThrows(function() { String.fromCodePoint(-Infinity); }, RangeError);
+assertThrows(function() { String.fromCodePoint(+Infinity); }, RangeError);
 assertThrows(function() { String.fromCodePoint(NaN); }, RangeError);
 assertThrows(function() { String.fromCodePoint(undefined); }, RangeError);
 assertThrows(function() { String.fromCodePoint({}); }, RangeError);
+assertThrows(function() { String.fromCodePoint(/./); }, RangeError);
 
 var counter = Math.pow(2, 15) * 3 / 2;
 var result = [];
