@@ -1,4 +1,4 @@
-# ES6 `String.fromCodePoint` polyfill [![Build status](https://travis-ci.org/mathiasbynens/String.fromCodePoint.png?branch=master)](https://travis-ci.org/mathiasbynens/String.fromCodePoint)
+# ES6 `String.fromCodePoint` polyfill [![Build status](https://travis-ci.org/mathiasbynens/String.fromCodePoint.svg?branch=master)](https://travis-ci.org/mathiasbynens/String.fromCodePoint)
 
 An robust & optimized ES3-compatible polyfill for [the `String.fromCodePoint` method in ECMAScript 6](http://people.mozilla.org/~jorendorff/es6-draft.html#sec-string.fromcodepoint).
 
@@ -40,7 +40,7 @@ The tests for this repository [are now used by Mozilla](http://hg.mozilla.org/in
 
 ## Author
 
-| [![twitter/mathias](http://gravatar.com/avatar/24e08a9ea84deb17ae121074d0f17125?s=70)](http://twitter.com/mathias "Follow @mathias on Twitter") |
+| [![twitter/mathias](https://gravatar.com/avatar/24e08a9ea84deb17ae121074d0f17125?s=70)](https://twitter.com/mathias "Follow @mathias on Twitter") |
 |---|
 | [Mathias Bynens](http://mathiasbynens.be/) |
 
