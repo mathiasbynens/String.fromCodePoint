@@ -1,4 +1,4 @@
-/*! http://mths.be/fromcodepoint v0.1.0 by @mathias */
+/*! http://mths.be/fromcodepoint v0.2.0 by @mathias */
 if (!String.fromCodePoint) {
 	(function() {
 		var defineProperty = (function() {
