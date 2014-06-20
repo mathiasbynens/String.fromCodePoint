@@ -30,6 +30,9 @@ assertThrows(function() { String.fromCodePoint(NaN); }, RangeError);
 assertThrows(function() { String.fromCodePoint(undefined); }, RangeError);
 assertThrows(function() { String.fromCodePoint({}); }, RangeError);
 assertThrows(function() { String.fromCodePoint(/./); }, RangeError);
+var tmp = 0x60;
+assertEquals(String.fromCodePoint({ 'valueOf': function() { ++tmp; return tmp; } }), 'a');
+assertEquals(tmp, 0x61);
 
 var counter = Math.pow(2, 15) * 3 / 2;
 var result = [];
