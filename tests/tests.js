@@ -4,7 +4,7 @@ var assertThrows = assert['throws'];
 
 require('../fromcodepoint.js');
 
-assertEquals(String.fromCodePoint.length, 0);
+assertEquals(String.fromCodePoint.length, 1);
 assertEquals(String.propertyIsEnumerable('fromCodePoint'), false);
 
 assertEquals(String.fromCodePoint(''), '\0');

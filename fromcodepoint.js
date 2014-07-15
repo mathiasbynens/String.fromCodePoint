@@ -12,7 +12,7 @@ if (!String.fromCodePoint) {
 		}());
 		var stringFromCharCode = String.fromCharCode;
 		var floor = Math.floor;
-		var fromCodePoint = function() {
+		var fromCodePoint = function(_) {
 			var MAX_SIZE = 0x4000;
 			var codeUnits = [];
 			var highSurrogate;
