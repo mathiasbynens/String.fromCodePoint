@@ -5,3 +5,5 @@ script:
   - "npm test"
 after_script:
   - "npm run-script coveralls"
+git:
+  depth: 10
