@@ -34,7 +34,7 @@ require('String.fromCodePoint');
 
 ## Notes
 
-[A polyfill + test suite for `String.prototype.codePointAt`](http://mths.be/codepointat) is available, too.
+[A polyfill + test suite for `String.prototype.codePointAt`](https://mths.be/codepointat) is available, too.
 
 The tests for this repository [are now used by Mozilla](http://hg.mozilla.org/integration/mozilla-inbound/rev/2411714cd058), to help ensure their native `String.fromCodePoint` implementation is correct.
 
@@ -42,8 +42,8 @@ The tests for this repository [are now used by Mozilla](http://hg.mozilla.org/in
 
 | [![twitter/mathias](https://gravatar.com/avatar/24e08a9ea84deb17ae121074d0f17125?s=70)](https://twitter.com/mathias "Follow @mathias on Twitter") |
 |---|
-| [Mathias Bynens](http://mathiasbynens.be/) |
+| [Mathias Bynens](https://mathiasbynens.be/) |
 
 ## License
 
-This polyfill is available under the [MIT](http://mths.be/mit) license.
+This polyfill is available under the [MIT](https://mths.be/mit) license.

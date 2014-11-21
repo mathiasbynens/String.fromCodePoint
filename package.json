@@ -2,7 +2,7 @@
 	"name": "string.fromcodepoint",
 	"version": "0.2.1",
 	"description": "A robust & optimized `String.fromCodePoint` polyfill, based on the ECMAScript 6 specification.",
-	"homepage": "http://mths.be/fromcodepoint",
+	"homepage": "https://mths.be/fromcodepoint",
 	"main": "fromcodepoint.js",
 	"keywords": [
 		"string",
@@ -11,30 +11,20 @@
 		"ecmascript",
 		"polyfill"
 	],
-	"licenses": [
-		{
-			"type": "MIT",
-			"url": "http://mths.be/mit"
-		}
-	],
+	"license": "MIT",
 	"author": {
 		"name": "Mathias Bynens",
-		"url": "http://mathiasbynens.be/"
+		"url": "https://mathiasbynens.be/"
 	},
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/mathiasbynens/String.fromCodePoint.git"
 	},
-	"bugs": {
-		"url": "https://github.com/mathiasbynens/String.fromCodePoint/issues"
-	},
+	"bugs": "https://github.com/mathiasbynens/String.fromCodePoint/issues",
 	"files": [
 		"LICENSE-MIT.txt",
 		"fromcodepoint.js"
 	],
-	"directories": {
-		"test": "tests"
-	},
 	"devDependencies": {
 		"coveralls": "^2.11.1",
 		"istanbul": "^0.3.0"
