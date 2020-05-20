@@ -3,7 +3,15 @@
 	"version": "0.2.1",
 	"description": "A robust & optimized `String.fromCodePoint` polyfill, based on the ECMAScript 6 specification.",
 	"homepage": "https://mths.be/fromcodepoint",
-	"main": "fromcodepoint.js",
+	"main": "index.js",
+	"exports": {
+		".": "./index.js",
+		"./auto": "./auto.js",
+		"./shim": "./shim.js",
+		"./getPolyfill": "./getPolyfill.js",
+		"./implementation": "./implementation.js",
+		"./package.json": "./package.json"
+	},
 	"keywords": [
 		"string",
 		"unicode",
@@ -21,17 +29,17 @@
 		"url": "https://github.com/mathiasbynens/String.fromCodePoint.git"
 	},
 	"bugs": "https://github.com/mathiasbynens/String.fromCodePoint/issues",
-	"files": [
-		"LICENSE-MIT.txt",
-		"fromcodepoint.js"
-	],
-	"devDependencies": {
-		"coveralls": "^2.11.1",
-		"istanbul": "^0.3.0"
-	},
 	"scripts": {
 		"test": "node tests/tests.js",
 		"cover": "istanbul cover --report html --verbose --dir coverage tests/tests.js",
 		"coveralls": "istanbul cover --verbose --dir coverage tests/tests.js && cat coverage/lcov.info | coveralls; rm -rf coverage/lcov*"
+	},
+	"dependencies": {
+		"define-properties": "^1.1.3",
+		"es-abstract": "^1.17.5"
+	},
+	"devDependencies": {
+		"coveralls": "^2.11.1",
+		"istanbul": "^0.3.0"
 	}
 }

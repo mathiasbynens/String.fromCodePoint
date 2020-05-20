@@ -2,7 +2,7 @@ var assert = require('assert');
 var assertEquals = assert.equal;
 var assertThrows = assert['throws'];
 
-require('../fromcodepoint.js');
+require('../auto.js');
 
 assertEquals(String.fromCodePoint.length, 1);
 assertEquals(String.propertyIsEnumerable('fromCodePoint'), false);
