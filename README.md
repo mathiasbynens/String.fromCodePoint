@@ -1,6 +1,8 @@
 # ES6 `String.fromCodePoint` polyfill [![Build status](https://travis-ci.org/mathiasbynens/String.fromCodePoint.svg?branch=master)](https://travis-ci.org/mathiasbynens/String.fromCodePoint) [![Code coverage status](http://img.shields.io/coveralls/mathiasbynens/String.fromCodePoint/master.svg)](https://coveralls.io/r/mathiasbynens/String.fromCodePoint)
 
-An robust & optimized ES3-compatible polyfill for [the `String.fromCodePoint` method in ECMAScript 6](http://people.mozilla.org/~jorendorff/es6-draft.html#sec-string.fromcodepoint).
+An robust & optimized polyfill for [the `String.fromCodePoint` method in ECMAScript 6](http://people.mozilla.org/~jorendorff/es6-draft.html#sec-string.fromcodepoint).
+
+This package implements the [es-shim API](https://github.com/es-shims/api) interface. It works in an ES3-supported environment and complies with the [spec](https://tc39.es/ecma262/#sec-string.fromcodepoint).
 
 Other polyfills for `String.fromCodePoint` are available:
 
@@ -9,12 +11,6 @@ Other polyfills for `String.fromCodePoint` are available:
 * <https://github.com/paulmillr/es6-shim/blob/771e98e789292706d2435e4e10ffbe45edf40da6/es6-shim.js#L63-L83> by [Paul Miller](http://paulmillr.com/) (passes all tests)
 
 ## Installation
-
-In a browser:
-
-```html
-<script src="fromcodepoint.js"></script>
-```
 
 Via [npm](http://npmjs.org/):
 
@@ -25,12 +21,19 @@ npm install string.fromcodepoint
 Then, in [Node.js](http://nodejs.org/):
 
 ```js
-require('string.fromcodepoint');
-
-// On Windows and on Mac systems with default settings, case doesn’t matter,
-// which allows you to do this instead:
-require('String.fromCodePoint');
+var fromCodePoint = require('string.fromcodepoint');
 ```
+
+In a browser:
+
+```html
+<script src="https://bundle.run/string.fromcodepoint"></script>
+```
+
+> **NOTE**: It's recommended that you install this module using a package manager
+> such as `npm`, because loading multiple polyfills from a CDN (such as `bundle.run`)
+> will lead to duplicated code.
+
 
 ## Notes
 
