@@ -1,0 +1,24 @@
+{
+	"root": true,
+
+	"extends": "@ljharb",
+
+	"rules": {
+		"max-lines-per-function": "off",
+		"new-cap": ["error", {
+			"capIsNewExceptions": [
+				"GetIntrinsic",
+				"IsIntegralNumber",
+				"ToNumber",
+			],
+		}],
+		"no-plusplus": "warn",
+	},
+
+	"overrides": [
+		{
+			"files": "tests/**/*",
+			"extends": "@ljharb/eslint-config/tests",
+		},
+	],
+}
