@@ -1,12 +1,12 @@
 'use strict';
 
-var includes = require('../');
+var index = require('../');
 var test = require('tape');
 
 var runTests = require('./tests');
 
 test('as a function', function (t) {
-	runTests(includes, t);
+	runTests(index, t);
 
 	t.end();
 });

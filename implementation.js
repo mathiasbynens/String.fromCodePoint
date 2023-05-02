@@ -2,14 +2,14 @@
 
 'use strict';
 
-var ToNumber = require('es-abstract/2019/ToNumber');
-var IsInteger = require('es-abstract/2019/IsInteger');
-var callBound = require('es-abstract/helpers/callBound');
-var callBind = require('es-abstract/helpers/callBind');
-var GetIntrinsic = require('es-abstract/GetIntrinsic');
+var ToNumber = require('es-abstract/2022/ToNumber');
+var IsIntegralNumber = require('es-abstract/2022/IsIntegralNumber');
+var callBound = require('call-bind/callBound');
+var callBind = require('call-bind');
+var GetIntrinsic = require('get-intrinsic');
 
 var ArrayPush = callBound('Array.prototype.push');
-var StringFromCharCodeSpread = callBind.apply(String.fromCharCode, null);
+var StringFromCharCodeSpread = callBind.apply(GetIntrinsic('String.fromCharCode'), null);
 
 module.exports = function fromCodePoint(_ /* fromCodePoint.length is 1 */) {
 	var MAX_SIZE = 0x4000;
@@ -25,7 +25,7 @@ module.exports = function fromCodePoint(_ /* fromCodePoint.length is 1 */) {
 	while (++index < length) {
 		var codePoint = ToNumber(arguments[index]);
 		if (
-			!IsInteger(codePoint) ||
+			!IsIntegralNumber(codePoint) ||
 			codePoint < 0 || codePoint > 0x10FFFF // not a valid Unicode code point
 		) {
 			throw RangeError('Invalid code point: ' + codePoint);

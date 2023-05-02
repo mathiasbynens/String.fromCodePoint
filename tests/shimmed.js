@@ -5,7 +5,6 @@ fromCodePoint.shim();
 
 var test = require('tape');
 var defineProperties = require('define-properties');
-var bind = require('function-bind');
 var isEnumerable = Object.prototype.propertyIsEnumerable;
 var functionsHaveNames = require('functions-have-names')();
 

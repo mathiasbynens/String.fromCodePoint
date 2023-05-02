@@ -36,12 +36,13 @@
 		"cover": "istanbul cover --report html --verbose --dir coverage tape 'tests/*.js'"
 	},
 	"dependencies": {
+		"call-bind": "^1.0.2",
 		"define-properties": "^1.2.0",
-		"es-abstract": "^1.21.2"
+		"es-abstract": "^1.21.2",
+		"get-intrinsic": "^1.2.0"
 	},
 	"devDependencies": {
 		"@es-shims/api": "^2.4.0",
-		"function-bind": "^1.1.1",
 		"functions-have-names": "^1.2.3",
 		"istanbul": "^0.4.5",
 		"tape": "^5.6.3"
