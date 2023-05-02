@@ -36,8 +36,8 @@
 		"cover": "istanbul cover --report html --verbose --dir coverage tape 'tests/*.js'"
 	},
 	"dependencies": {
-		"define-properties": "^1.1.3",
-		"es-abstract": "^1.17.5"
+		"define-properties": "^1.2.0",
+		"es-abstract": "^1.21.2"
 	},
 	"devDependencies": {
 		"@es-shims/api": "^2.4.0",
