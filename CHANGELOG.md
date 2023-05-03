@@ -5,6 +5,25 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v1.0.1](https://github.com/mathiasbynens/String.fromCodePoint/compare/v1.0.0...v1.0.1) - 2023-05-03
+
+### Commits
+
+- [eslint] add eslint [`407e79f`](https://github.com/mathiasbynens/String.fromCodePoint/commit/407e79fafd6c8bc77bccb6b4e5d663782779d3c2)
+- [meta] add `auto-changelog` [`fe2a285`](https://github.com/mathiasbynens/String.fromCodePoint/commit/fe2a28524fa8a99dabb3811fe998d590c7accecf)
+- [Tests] migrate from travis to github actions [`8f2a411`](https://github.com/mathiasbynens/String.fromCodePoint/commit/8f2a411beeb7565bdf4b6a9bde51a2c584fdd5aa)
+- Set up automated `npm publish` [`98f9153`](https://github.com/mathiasbynens/String.fromCodePoint/commit/98f9153708fab63de2f78e7094925d72527a3767)
+- [Refactor] use `call-bind` instead of `function-bind`; update `es-abstract` usage [`6c2e3fc`](https://github.com/mathiasbynens/String.fromCodePoint/commit/6c2e3fce8a187e3ee590d686285bca4435e5b95e)
+- [Tests] switch to `nyc` for coverage [`6e50781`](https://github.com/mathiasbynens/String.fromCodePoint/commit/6e5078125258929a8b29ff850a7a6c36d0fd2ed9)
+- [Tests] add coverage [`cf62429`](https://github.com/mathiasbynens/String.fromCodePoint/commit/cf62429bbdea6f905cb2531f79bde0a4d71e01c4)
+- [meta] use `npmignore` to autogenerate an npmignore file [`f44a07b`](https://github.com/mathiasbynens/String.fromCodePoint/commit/f44a07bf77dab604d840e88ded8e0204e979d02c)
+- [Dev Deps] update `@es-shims/api`, `functions-have-names`, `tape` [`4e12eb2`](https://github.com/mathiasbynens/String.fromCodePoint/commit/4e12eb288e579d06e30fdf238253925eb85a8db7)
+- [Fix] `exports` references nonexistent `getPolyfill`; add `polyfill` [`d5302af`](https://github.com/mathiasbynens/String.fromCodePoint/commit/d5302af4935e9006af6b3f4e89071b30cad23af6)
+- [Deps] update `define-properties`, `es-abstract` [`796ebf4`](https://github.com/mathiasbynens/String.fromCodePoint/commit/796ebf4b5e282493a7d262d8ed80aa2ff27d1317)
+- [Tests] increase coverage [`6fcbdf9`](https://github.com/mathiasbynens/String.fromCodePoint/commit/6fcbdf91a4c5a196e6cde825a2c344b832cd709c)
+- [meta] release message is preconfigured [`dca5491`](https://github.com/mathiasbynens/String.fromCodePoint/commit/dca54913bdf68d4ece172049634fa0953ea77b70)
+- [Tests] add missing `posttest` [`6c60518`](https://github.com/mathiasbynens/String.fromCodePoint/commit/6c605186da5f56f6f32b88f73af697de4428893b)
+
 ## [v1.0.0](https://github.com/mathiasbynens/String.fromCodePoint/compare/v0.2.1...v1.0.0) - 2020-05-21
 
 ### Merged
