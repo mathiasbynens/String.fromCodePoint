@@ -1,4 +1,4 @@
-# ES6 `String.fromCodePoint` polyfill [![Build status](https://travis-ci.org/mathiasbynens/String.fromCodePoint.svg?branch=master)](https://travis-ci.org/mathiasbynens/String.fromCodePoint) [![Code coverage status](http://img.shields.io/coveralls/mathiasbynens/String.fromCodePoint/master.svg)](https://coveralls.io/r/mathiasbynens/String.fromCodePoint)
+# ES6 `String.fromCodePoint` polyfill [![string.fromcodepoint on npm](https://img.shields.io/npm/v/string.fromcodepoint)](https://www.npmjs.com/package/string.fromcodepoint)
 
 An robust & optimized polyfill for [the `String.fromCodePoint` method in ECMAScript 6](http://people.mozilla.org/~jorendorff/es6-draft.html#sec-string.fromcodepoint).
 
@@ -40,6 +40,28 @@ In a browser:
 [A polyfill + test suite for `String.prototype.codePointAt`](https://mths.be/codepointat) is available, too.
 
 The tests for this repository [are now used by Mozilla](http://hg.mozilla.org/integration/mozilla-inbound/rev/2411714cd058), to help ensure their native `String.fromCodePoint` implementation is correct.
+
+## For maintainers
+
+### How to publish a new release
+
+1. On the `main` branch, bump the version number in `package.json`:
+
+    ```sh
+    npm version patch -m 'Release v%s'
+    ```
+
+    Instead of `patch`, use `minor` or `major` [as needed](https://semver.org/).
+
+    Note that this produces a Git commit + tag.
+
+1. Push the release commit and tag:
+
+    ```sh
+    git push && git push --tags
+    ```
+
+    Our CI then automatically publishes the new release to npm.
 
 ## Author
 
