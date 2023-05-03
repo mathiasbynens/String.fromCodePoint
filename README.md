@@ -48,7 +48,7 @@ The tests for this repository [are now used by Mozilla](http://hg.mozilla.org/in
 1. On the `main` branch, bump the version number in `package.json`:
 
     ```sh
-    npm version patch -m 'Release v%s'
+    npm version patch
     ```
 
     Instead of `patch`, use `minor` or `major` [as needed](https://semver.org/).
