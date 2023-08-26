@@ -2,8 +2,8 @@
 
 'use strict';
 
-var IsIntegralNumber = require('es-abstract/2022/IsIntegralNumber');
-var ToNumber = require('es-abstract/2022/ToNumber');
+var IsIntegralNumber = require('es-abstract/2023/IsIntegralNumber');
+var ToNumber = require('es-abstract/2023/ToNumber');
 
 var callBound = require('call-bind/callBound');
 var callBind = require('call-bind');
