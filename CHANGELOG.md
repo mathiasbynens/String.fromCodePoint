@@ -5,6 +5,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v1.0.2](https://github.com/mathiasbynens/String.fromCodePoint/compare/v1.0.1...v1.0.2) - 2023-08-26
+
+### Commits
+
+- [Deps] update `es-abstract`, `get-intrinsic` [`b62cdbe`](https://github.com/mathiasbynens/String.fromCodePoint/commit/b62cdbe6ef486f5ad928dcddf15569a9bf52f7ae)
+- [Dev Deps] update `@es-shims/api`, `@ljharb/eslint-config`, `aud`, `tape` [`7402a9b`](https://github.com/mathiasbynens/String.fromCodePoint/commit/7402a9bfa6264b3983bc6f13d7b14eb77681f1b6)
+
 ## [v1.0.1](https://github.com/mathiasbynens/String.fromCodePoint/compare/v1.0.0...v1.0.1) - 2023-05-03
 
 ### Commits
