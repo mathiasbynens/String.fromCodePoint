@@ -9,7 +9,7 @@ var callBound = require('call-bind/callBound');
 var callBind = require('call-bind');
 var GetIntrinsic = require('get-intrinsic');
 
-var $RangeError = GetIntrinsic('%RangeError%');
+var $RangeError = require('es-errors/range');
 var $push = callBound('Array.prototype.push');
 var $fromCharCodeSpread = callBind.apply(GetIntrinsic('%String.fromCharCode%'), null);
 
