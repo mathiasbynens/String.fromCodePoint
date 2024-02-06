@@ -41,10 +41,10 @@
 		"postversion": "auto-changelog && git add CHANGELOG.md && git commit --no-edit --amend && git tag -f \"v$(node -e \"console.log(require('./package.json').version)\")\""
 	},
 	"dependencies": {
-		"call-bind": "^1.0.2",
-		"define-properties": "^1.2.0",
-		"es-abstract": "^1.22.1",
-		"get-intrinsic": "^1.2.1"
+		"call-bind": "^1.0.6",
+		"define-properties": "^1.2.1",
+		"es-abstract": "^1.22.3",
+		"get-intrinsic": "^1.2.3"
 	},
 	"devDependencies": {
 		"@es-shims/api": "^2.4.2",
