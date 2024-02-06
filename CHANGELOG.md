@@ -5,6 +5,15 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v1.0.3](https://github.com/mathiasbynens/String.fromCodePoint/compare/v1.0.2...v1.0.3) - 2024-02-05
+
+### Commits
+
+- [Deps] update `call-bind`, `define-properties`, `es-abstract`, `get-intrinsic` [`de770f7`](https://github.com/mathiasbynens/String.fromCodePoint/commit/de770f7def8b9c9e7b5c4a7fc835758d92359737)
+- [Dev Deps] update `aud`, `npmignore`, `tape` [`dcfc09a`](https://github.com/mathiasbynens/String.fromCodePoint/commit/dcfc09a48778d17520c5ac4fbeeb6699476dea0f)
+- [meta] add missing `engines.node` [`7821acd`](https://github.com/mathiasbynens/String.fromCodePoint/commit/7821acd94a865998cd265803a7a6f9a6c13e46c1)
+- [Refactor] use `es-errors`, so things that only need those do not need `get-intrinsic` [`de71c86`](https://github.com/mathiasbynens/String.fromCodePoint/commit/de71c86ed35a4a5fe905cc2c24559c527c448db6)
+
 ## [v1.0.2](https://github.com/mathiasbynens/String.fromCodePoint/compare/v1.0.1...v1.0.2) - 2023-08-26
 
 ### Commits

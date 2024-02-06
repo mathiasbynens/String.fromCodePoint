@@ -1,6 +1,6 @@
 {
 	"name": "string.fromcodepoint",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"description": "A robust & optimized `String.fromCodePoint` polyfill, based on the ECMAScript 6 specification.",
 	"homepage": "https://mths.be/fromcodepoint",
 	"main": "index.js",
